@@ -5,6 +5,9 @@
 This repository contains source code for a basic Node.js application that can be be built and deployed to an Amazon EKS cluster. During the CI stage, the application is tested, built and pushed to Docker Hub repository. After that, a connection is established with the Amazon EKS cluster before the application is deployed using Skaffold.
 
 ## Prerequisites
+  
+   clone this app first
+
 * [Skaffold](https://skaffold-latest.firebaseapp.com/)
 * [Node.js](https://nodejs.org/)
 * [kubectl](https://kubernetes.io/docs/tasks/tools/)
