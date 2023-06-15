@@ -1,6 +1,7 @@
 # Build & Deploy Node.js Application to Amazon EKS with Skaffold and GitHub Actions
 
-![Diagram of workflow](skaffold-and-github-actions.png)
+![image](https://github.com/gautam0101/Sakfoold/assets/101164301/a4254879-e0f5-4cf2-af9e-ba0795533657)
+
 
 This repository contains source code for a basic Node.js application that can be be built and deployed to an Amazon EKS cluster. During the CI stage, the application is tested, built and pushed to Docker Hub repository. After that, a connection is established with the Amazon EKS cluster before the application is deployed using Skaffold.
 
