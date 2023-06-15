@@ -75,4 +75,13 @@ Step 3:- Configure EKS to kubectl
 
 # set these things to gitrepo
 ![Screenshot from 2023-06-15 15-37-31](https://github.com/gautam0101/Sakfoold/assets/101164301/392d83c7-00d5-40a9-ad2e-2d8e66217f2e)
+```
+git add .
 
+git commit -m "other: initial commit"
+
+git remote add origin <your-remote-repository>
+
+git push -u origin <main-branch-name>
+
+```
