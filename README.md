@@ -43,15 +43,15 @@ You can create an Amazon EKS cluster in your AWS account using these commands
 
 // Adds third party repositaries to home brew
 
-brew tap weaveworks/tap
+`brew tap weaveworks/tap`
 
 // Installs eksctl
 
-brew install weaveworks/tap/eksctl
+`brew install weaveworks/tap/eksctl`
 
 step 2:- Create an EKS cluster using eksctl
 
-eksctl create cluster --name my-cluster --region ap-south-1 --nodegroup-name linux-nodes  --node-type t2.micro --nodes 2
+`  eksctl create cluster --name my-cluster --region ap-south-1 --nodegroup-name linux-nodes  --node-type t2.micro --nodes 2`
 
 #You can give the any name to the cluster but don't give sampe to more then one.
 
@@ -62,6 +62,6 @@ Step 3:- Configure EKS to kubectl
 
 // To configure
 
-aws eks update-kubeconfig --region ap-south-1 --name my-cluster // To Check the configuration
+`aws eks update-kubeconfig --region ap-south-1 --name my-cluster` // To Check the configuration
 
-kubectl get nodes
+`kubectl get nodes`
