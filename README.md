@@ -36,5 +36,32 @@ skaffold init # run this if you don't have a Skaffold manifest file
 skaffold dev # run this for continuous delivery to you K8s cluster 
 ```
 
-## Create Amazon EKS Cluster with Terraform
-You can create an Amazon EKS cluster in your AWS account using the source code available [here](https://github.com/LukeMwila/amazon-eks-cluster).
+## Create Amazon EKS Cluster
+You can create an Amazon EKS cluster in your AWS account using these commands
+
+   step 1:- Install eksctl
+
+// Adds third party repositaries to home brew
+
+brew tap weaveworks/tap
+
+// Installs eksctl
+
+brew install weaveworks/tap/eksctl
+
+step 2:- Create an EKS cluster using eksctl
+
+eksctl create cluster --name my-cluster --region ap-south-1 --nodegroup-name linux-nodes  --node-type t2.micro --nodes 2
+
+#You can give the any name to the cluster but don't give sampe to more then one.
+
+![image](https://github.com/gautam0101/Sakfoold/assets/101164301/c12f24af-6b09-4acd-8854-da2b60ce08aa)
+
+
+Step 3:- Configure EKS to kubectl
+
+// To configure
+
+aws eks update-kubeconfig --region ap-south-1 --name my-cluster // To Check the configuration
+
+kubectl get nodes
