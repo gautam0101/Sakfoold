@@ -69,3 +69,10 @@ Step 3:- Configure EKS to kubectl
 `aws eks update-kubeconfig --region ap-south-1 --name my-cluster` // To Check the configuration
 
 `kubectl get nodes`
+
+## Then create the git repo
+![Screenshot from 2023-06-15 15-39-11](https://github.com/gautam0101/Sakfoold/assets/101164301/e6f45664-834a-4b03-aa9c-64f79104853d)
+
+# set these things to gitrepo
+![Screenshot from 2023-06-15 15-37-31](https://github.com/gautam0101/Sakfoold/assets/101164301/392d83c7-00d5-40a9-ad2e-2d8e66217f2e)
+
